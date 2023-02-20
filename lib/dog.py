@@ -2,9 +2,10 @@
 
 class Dog:
     # initialise the class
-    def __init__(self, name, favorite_toy="Any"):
+    def __init__(self, name, favorite_toy="Any", breed="Mutt"):
         self.name = name
         self.favorite_toy = favorite_toy
+        self.breed = breed
 
     
     def bark(self):
