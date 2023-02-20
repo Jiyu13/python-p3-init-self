@@ -2,8 +2,9 @@
 
 class Dog:
     # initialise the class
-    def __init__(self, name, breed="Mutt"):
+    def __init__(self, name, favorite_toy="Any", breed="Mutt"):
         self.name = name
+        self.favorite_toy = favorite_toy
         self.breed = breed
 
     
@@ -17,3 +18,20 @@ class Dog:
     def get_adpoted(self, owner_name):
         self.owner = owner_name
     
+
+fido = Dog("Fido")
+fido.name    # Fido
+print(fido.showing_self())  # <__main__.Dog object at 0x7f49a9a4f7c0>
+
+# set fido owner attritube
+fido.get_adpoted("Sophie")
+print(fido.owner)   # Sophie
+
+fido.favorite_toy # Any
+
+fido.breed = "Dalmatian"
+
+
+snoopy = Dog("Snoopy", "Tennis Ball")
+snoopy.name
+snoopy.favorite_toy # Tennis Ball
